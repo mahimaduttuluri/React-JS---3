@@ -1,0 +1,68 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Helvetica Neue', sans-serif;
+  /* Change the font family */
+  background-color: #e09f9f;
+  /* Set a background color */
+}
+
+h1 {
+  font-size: 28px;
+  /* Increase the font size */
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  /* Change the font for the heading */
+}
+
+button {
+  padding: 12px 24px;
+  /* Adjust button padding */
+  background-color: #ff5733;
+  /* Change the button background color */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.color-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.color-item {
+  width: 60px;
+  /* Increase the color item size */
+  height: 60px;
+  margin: 8px;
+  /* Adjust margin */
+  cursor: pointer;
+}
+
+.selected-color {
+  margin-top: 20px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  /* Change the font for the selected color text */
+  color: #333;
+  /* Change text color */
+}
+
+.selected-color::before {
+  content: 'Selected Color: ';
+}
+
+.selected-color::after {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  /* Increase size of the color box */
+  height: 30px;
+  margin-left: 10px;
+  border: 1px solid #fdfcfc;
+}
